@@ -1,0 +1,227 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.home-page{
+  min-height: 100vh;
+  width: 100%;
+  background-color:  #edf2f4;
+  /* position: relative; */
+}
+nav{
+  width: 100%;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+  /* background-color:  #fff; */
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 20px 0 0 0;
+  justify-content: flex-end;
+}
+li{
+  height: 40px;
+}
+li:first-child{
+  margin-right: auto;
+}
+li a{
+  text-decoration: none;
+  color: #003049;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 15px;
+  font-family: serif;
+}
+/* .logo{
+  font-size: 20px;
+   padding-left: 30px;
+   font-family: sans-serif;
+} */
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  backdrop-filter: blur(10px);
+  /* background-color: #649cbb; */
+  z-index: 999;
+  width: 50%;
+  height: 100vh;
+  transition: .5s;
+}
+
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+  color:  #003049;
+  padding-left: 30px;
+}
+.sidebar a:hover{
+  background-color: hsla(224, 50%, 47%, 0.233);
+  padding-left: 30px;
+}
+.hidden{
+  display: none;
+}
+.show{
+  color: red;
+}
+@media screen and (max-width: 800px){
+  .hidden{
+    display: flex;
+  }
+  nav a{
+    padding: 0 8px;
+  }
+  .hideOnMobile{
+    display:none;
+  }
+}
+.header{
+  min-height: 90vh;
+  background-color: #edf2f4;
+  margin-top: 15px;
+  position: relative;
+
+}
+.main-content{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+.main-content p{
+  color: #5c677d;
+  font-size: 20px;
+}
+.main-content h1{
+  color: #e5383b;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+.main-content h6{
+  color: #7d8597;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.main-content button{
+  /* margin-top: 15px;
+  padding: 10px 30px;
+  color: white;
+  border: 1px solid;
+  border-radius: 50px; */
+
+  
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right,   #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    font-weight: 600;
+    font-size: 13px;
+}
+.main-content button:hover{
+  background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.image-container{
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: -35%;
+  left: 110%;
+  transition: .5s ease;
+}
+.image-container:hover{
+  transform: translateY(20px);
+}
+.image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* ****** Feature ****** */
+.section-p1{
+  padding: 40px 80px;
+}
+#feature{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature-box{
+  width: 150px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+.feature-box:hover{
+  box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.35);
+}
+.feature-box img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.feature-box h6{
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #008178;
+  background-color: #fddde4;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+  .image-container{
+    display: none;
+  }
+}
