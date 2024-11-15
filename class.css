@@ -492,11 +492,18 @@ li a{
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
   }
   .sm-banner, .sm-sm-banner{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     
   }
+
+.sm-sm-banner p{
+  color: red;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 10px;
+}
 }
 
