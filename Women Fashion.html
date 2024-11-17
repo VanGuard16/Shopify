@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopify</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="class.css">
+</head>
+<body>
+    <nav>
+      <ul>
+        <li ><a href="#" class="logo">VanGuard</a></li>
+        <div class="primary-nav">
+          <li class="hideOnMobile"><a href="index.html" >Home</a></li>
+          <li class="hideOnMobile"><a href="New Arrival.html" >New Arrival</a></li>
+          <li class="hideOnMobile"><a href="#" class="active-underline">Women</a></li>
+          <li class="hideOnMobile"><a href="#">Men</a></li>
+          <li class="hideOnMobile"><a href="#">Kids</a></li>
+        </div>
+
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <div class="shoppingBasket">
+          <li class="quantity-container"><a><i class="fa-solid fa-cart-shopping"></i></a><span class="quantity" style="display: none;">0</span></li>
+          
+        </div>
+        <li ><a href="#"><i class="fa-regular fa-user" ></i></a></li>
+        <li onclick="showSidebar()" class="hidden"><a ><i class="fa-solid fa-bars bar"></i></a></li>
+      </ul>
+  
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a ><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="index.html"><i class="fa-solid fa-house sidebar-icon-1"></i>Home</a></li>
+          <li><a href="New Arrival.html"><i class="fa-solid fa-shirt sidebar-icon-1"></i></i>New Arrival</a></li>
+          <li><a href="#"><i class="fa-solid fa-person-dress sidebar-icon-2"></i>Women</a></li>
+          <li><a href="#"><i class="fa-solid fa-person sidebar-icon-2"></i>Men</a></li>
+          <li><a href="#"><i class="fa-solid fa-child sidebar-icon-2"></i>Kids</a></li>
+        </ul>
+
+    </nav>
+   </div>
+   </section>
+
+ <section class="thumbnails">
+  <div class="product-banner">
+    
+    <div class="image"><a href="#"><img src="Women_clothing_Thumbnails.png" alt=""></a>
+      <p>Clothing</p></div>
+    <div class="image"><a href="#"><img src="women_bags_ThumbnailsV2.png" alt=""></a>
+      <p>Bags</p></div>
+    <div class="image"><a href="#"><img src="women_watches_Thumbnails.png" alt=""></a>
+      <p>Watches</p></div>
+    <div class="image"><a href="#"><img src="Women_shoes_Thumbnails.png" alt=""></a>
+      <p>shoes</p></div>
+    <div class="image"><a href="#"><img src="women_accessories_Thumbnails.png" alt=""></a>
+      <p>Accessories</p></div>
+    <div class="image"><a href="#"><img src="women_jewelry_Thumbnails.png" alt=""></a>
+      <p>Jewelry</p></div>
+    <div class="image"><a href="#"><img src="women_flats_Thumbnails.png" alt=""></a>
+      <p>Flat</p>
+    </div>
+    <div class="image"><a href="#">
+      <img src="women_swimsuit_Thumbnails.png" alt=""></a>
+        <p>Swimwears</p>
+    </div>
+  </div>
+ </section>
+ <section id="product1">
+  <div class="product-link">
+    <h1>Clothing</h1>
+  </div>
+    <!-- <p>Summer Collection New Mordern Design</p> -->
+<div class="products-section clothing">
+  <div class="product-container ">
+  </div>
+</div>
+</section>
+<section id="product1">
+  <div class="product-link">
+    <h1>Shoes</h1>
+  </div>
+    <!-- <p>Summer Collection New Mordern Design</p> -->
+<div class="products-section shoes">
+  <div class="product-container ">
+  </div>
+</div>
+
+
+
+
+  <div class="cart-container">
+    <h3>Your Cart</h3>
+    <div class="scrollable">
+      <ul class="productList"></ul>
+    </div>
+  
+    <div class="checkout">
+      <div class="total"></div>
+      <div class="close">Close</div> 
+    </div>
+  </div> 
+
+
+
+<script src="shopify-cart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+function showSidebar(){
+  $(".sidebar").show();
+}
+function hideSidebar(){
+  $(".sidebar").hide();
+}
+       
+// $(document).ready(function(){
+//   $(".cart").click(function(){
+//     alert("Cart successfully added")
+//   })
+// })
+
+
+      let ArrProducts = [
+      {
+    id: 49,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/268383/1.jpg?9312",
+    name: "Cartoon Astronaut T-shirts",
+    price: 33,
+    rating : 3,
+    category: "clothing",
+    
+  },
+  {
+    id: 50,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/309383/1.jpg?9237",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+  },
+  {
+    id: 51,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/61/959583/1.jpg?7167",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 52,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/51/377676/1.jpg?5689",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 53,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/53/4457811/1.jpg?2547",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 54,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/65/6175362/1.jpg?1400",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 55,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/64/9210562/1.jpg?7181",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 56,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/91/5049121/1.jpg?7487",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 57,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/30/5093302/1.jpg?5344",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 5,
+    category: "clothing",
+    
+  },
+  {
+    id: 58,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/36/4029162/1.jpg?2335",
+    name: "Cartoon Astronaut T-shirts",
+    price: 56,
+    rating : 3,
+    category: "clothing",
+    
+  }, 
+  {
+    id: 59,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/3726852/1.jpg?1184",
+    name: "Cartoon Astronaut T-shirts",
+    price: 78,
+    rating : 2,
+    category: "clothing",
+  },
+  {
+    id: 60,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/62/1702062/1.jpg?2583",
+    name: "Orbit Drift Top",
+    price: 100,
+    rating : 5,
+    category: "clothing",
+  },
+  {
+    id: 61,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/71/4613251/1.jpg?9186",
+    name: "Cosmic Duo Set",
+    price: 30,
+    rating : 2,
+    category: "clothing",
+  },
+  {
+    id: 62,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/9892042/1.jpg?7874",
+    name: "Astro Match Set",
+    price: 40,
+    rating : 5,
+    category: "clothing",
+  },
+  {
+    id: 63,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/85/6345413/1.jpg?5188",
+    name: "Planetary Vibes Set",
+    price: 70,
+    rating : 4,
+    category: "clothing",
+  },
+  {
+    id: 64,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/8724092/1.jpg?0651",
+    name: "Orbit Fun Leggings",
+    price: 50,
+    rating: 2,
+    category: "clothing",
+  },
+  {
+    id: 65,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/9466652/1.jpg?6136",
+    name: "Solar Flare Pair",
+    price: 78,
+    rating : 5,
+    category: "clothing",
+  },
+  {
+    id: 66,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/76/5091062/1.jpg?6237",
+    name: "Cosmic Comfy Track Pants",
+    price: 55,
+    rating : 5,
+    category: "clothing",
+  },
+  {
+    id: 67,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/25/6431331/1.jpg?5425",
+    name: "Stellar Stripe Shorts",
+    price: 20,
+    rating : 4,
+    category: "shoes",
+  },
+  {
+    id: 68,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/67/7348932/1.jpg?2883",
+    name: "Doodle Duo",
+    price: 25,
+    rating : 5,
+    category: "shoes",
+  },
+  {
+    id: 69,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/2323742/1.jpg?9144",
+    name: "Cosmic Kicks",
+    price: 33,
+    rating : 3,
+    category: "shoes",
+    
+  },
+  {
+    id: 70,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/9800862/1.jpg?5440",
+    name: "Galaxy Glide Sneakers",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+    
+  },
+  {
+    id: 71,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/563176/1.jpg?9548",
+    name: "Rocket Runners",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+    
+  },
+  {
+    id: 72,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/840777/1.jpg?1931",
+    name: "Meteor Move High-Tops",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+    
+  },
+  {
+    id: 73,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/83/1390032/1.jpg?3650",
+    name: "Supernova Soles",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+  },
+  {
+    id: 74,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/38/8897122/1.jpg?2432",
+    name: "Starlight Glow Trainers",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+  },
+  {
+    id: 75,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/74/4540292/1.jpg?5609",
+    name: "Nebula Fun High-Tops",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+  },
+  {
+    id: 76,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/635909/1.jpg?3615",
+    name: "Starburst Strides",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+  },
+  {
+    id: 77,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/4483161/1.jpg?0976",
+    name: "Planet Pulse Sneakers",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+  },
+  {
+    id: 78,
+    image: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/8265531/1.jpg?2050",
+    name: "Orbit Dash Runners",
+    price: 56,
+    rating : 5,
+    category: "shoes",
+  },
+];
+
+const body = document.querySelector('body');
+
+
+ shoppingBasket = document.querySelector('.shoppingBasket');
+ closeCart = document.querySelector('.close');
+ productList = document.querySelector('.productList');
+
+
+// let checkOutList =[];
+
+shoppingBasket.onclick = () =>{
+  body.classList.add("active");
+;}
+closeCart.onclick = () =>{
+  body.classList.remove("active");
+;}
+
+
+function displayProductsByCategory() {
+
+  const clothingSection = document.querySelector('.products-section.clothing .product-container');
+  const shoesSection = document.querySelector('.products-section.shoes .product-container');
+  
+  // Filter clothing products
+  const clothingProducts = ArrProducts.filter(product => product.category === "clothing");
+  clothingProducts.forEach(product => {
+    let div = document.createElement('div');
+    div.classList.add("item");
+    
+    let star = '';
+      for (let i = 0; i < product.rating; i++) {
+        star += `<i class="fas fa-star"></i>`;
+      }
+
+    div.innerHTML = `
+      <div class="product">
+        <img src="${product.image}" alt="${product.name}" />
+        <div class="des">
+          <span>adidas</span>
+          <h5 class="name">${product.name}</h5>
+          <div class="stars">${star}</div>
+          <h4>$${product.price}</h4>
+        </div>
+        <a><i onclick="addToCart(${product.id})" class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+    `;
+    clothingSection.appendChild(div);
+  });
+
+  // Filter shoe products
+  const shoeProducts = ArrProducts.filter(product => product.category === "shoes");
+  shoeProducts.forEach(product => {
+    let div = document.createElement('div');
+    div.classList.add("item");
+
+    let star = '';
+      for (let i = 0; i < product.rating; i++) {
+        star += `<i class="fas fa-star"></i>`;
+      }
+
+    div.innerHTML = `
+      <div class="product">
+        <img src="${product.image}" alt="${product.name}" />
+        <div class="des">
+          <span>adidas</span>
+          <h5 class="name">${product.name}</h5>
+          <div class="stars">${star}</div>
+          <h4>$${product.price}</h4>
+        </div>
+        <a><i onclick="addToCart(${product.id})" class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+    `;
+    shoesSection.appendChild(div);
+  });
+}
+
+// Call the function to display products
+displayProductsByCategory();
+
+  </script>
+</body>
+</html>
